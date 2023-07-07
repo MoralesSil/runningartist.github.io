@@ -1,0 +1,168 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hepta Slab', sans-serif;
+    background-color: #f0f1f4;
+    color: #121114;
+    margin: 0;
+    padding: 0;
+}
+  
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #4e2b23;
+}
+  
+a {
+    color: #702619;
+    text-decoration: none;
+}
+  
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #f0f1f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+  
+/* Banner*/
+.banner {
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.containerB {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+  
+.col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.imgBanner {
+    width: 100%;
+}
+
+.col2 {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btnBanner {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #702619;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.btnBanner:hover {
+    background-color: #cfc2a0;
+}
+  
+  /* Estilos de las secciones */
+  section {
+    padding: 80px;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    background-color: #121114;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  /* Media queries para la responsividad */
+  @media screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .banner {
+        padding: 2rem 0;
+    }
+    
+    .containerB {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+    
+    .col1 {
+        margin-bottom: 1rem;
+    }
+    
+    .imgBanner {
+        width: 100%;
+    }
+    
+    .col2 {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    #txtBanner {
+        font-size: 16px;
+    }
+    
+    .btnBanner {
+        padding: 10px 20px;
+    }
+  }
+  
